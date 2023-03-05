@@ -1,0 +1,26 @@
+.main{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.card{
+    border: 1px solid var(--color-blue);
+    width: 45%;
+    margin: 0 auto;
+    height: 40px;
+    padding-top: 10px;
+        border-radius: 5px;
+}
+.card:not(:last-child){
+    margin-bottom: 20px;
+}
+.card:last-child{
+    background: var(--color-blue);
+    transition: 1s linear;
+}
+.card:last-child:hover{
+    background: transparent;
+}

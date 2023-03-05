@@ -1,0 +1,41 @@
+header {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+header .main {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+header .main .logo {
+    display: flex;
+    width: 30%;
+    align-items: center;
+
+    text-transform: capitalize;
+}
+
+header .main .logo>img {
+    width: 15%;
+}
+
+header .main .logo>p {
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+header .main nav a>button {
+    padding: 14px 45px;
+    background: var(--color-blue);
+    border: none;
+    border-radius: 5px;
+}

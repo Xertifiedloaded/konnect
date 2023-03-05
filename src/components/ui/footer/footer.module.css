@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+    text-align: center;
+    background: var(--color-white);
+}
+
+.main>p {
+    color: var(--color-black);
+    padding-top: 10px;
+    font-size: 15px;
+}
+.main .social{
+padding: 20px 0 40px;
+}
+.main .social a:not(:last-child){
+margin-right: 10px;
+}
+.main .social a>img {
+    filter: invert(1);
+    width: 24px;
+}

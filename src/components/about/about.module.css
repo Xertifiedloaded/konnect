@@ -1,0 +1,30 @@
+.main>p {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.main>.about {
+    width: 90%;
+    margin: 0 auto;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 40px;
+    gap: 30px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr));
+}
+
+.main .about .aboutContent>h3,
+.main .about .aboutValidation>h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main .about .aboutContent>p,
+.main .about .aboutValidation>p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}

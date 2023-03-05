@@ -1,0 +1,11 @@
+.main {
+    padding-top: 83px;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.bg {
+    background: white;
+    color: black;
+}

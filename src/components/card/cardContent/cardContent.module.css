@@ -1,0 +1,22 @@
+.main {
+    text-align: center;
+    -webkit-box-shadow: -1px -1px 15px -178px rgba(0, 0, 0, 1);
+    padding: 40px 0;
+    background: var(--color-white);
+    border-radius: 3px;
+    border: 1px solid rgb(24, 24, 24);
+    transform: scale(1);
+    transition: 1s;
+}
+.main>img {
+    width: 30%;
+    padding: 0 50px;
+}
+.main>p{
+    margin-top: 10px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.main:hover{
+  transform: scale(1.05);
+}

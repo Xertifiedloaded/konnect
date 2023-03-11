@@ -1,4 +1,11 @@
-.main{
+.main {
     padding-top: 83px;
     margin-bottom: 10px;
+
+}
+
+.loader {
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }

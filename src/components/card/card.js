@@ -1,19 +1,54 @@
-import React from 'react'
+import { React, useState, useEffect, useContext } from 'react'
 import classes from './card.module.css'
-import { Wallet } from '../../constant'
 import CardContent from './cardContent/cardContent'
+import { UserContent } from '../../layout/mainLayout'
+import Loader from '../../assets/images/loader.svg'
+import axios from 'axios'
 const Card = () => {
+    const { isLoading, setLoading } = useContext(UserContent)
+
+    const [user, setUser] = useState([])
+    const FetchApi = async () => {
+
+        try {
+            setLoading(true)
+            const res = await axios({
+                method: "GET",
+                url: "http://localhost:3000/wallets",
+                headers: {
+                    "Content-Type": "application.jspn"
+                }
+            })
+            setUser(res.data)
+            setLoading(false)
+        } catch (error) {
+            setLoading(false)
+            console.log(error)
+
+        }
+    }
+
+    useEffect(() => {
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000)
+        FetchApi()
+
+    }, [])
     return (
+
         <>
             <div className={classes.main}>
                 {
-                    Wallet.map((items, idx) => (
-                        <CardContent {...items} key={idx} />
+                    user.map((items, i) => (
+                        <CardContent   {...items} key={i} />
                     ))
                 }
-           </div>
+            </div>
+
         </>
-  )
+    )
 }
 
 export default Card;

@@ -12,7 +12,7 @@ const Header = () => {
                         <p>wallet connect</p>
                     </div>
                     <nav>
-                        <Link to="">
+                        <Link to="/">
                             <button>
                                 Connect
                             </button>

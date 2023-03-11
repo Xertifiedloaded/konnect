@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './cardContent.module.css'
-const CardContent = ({ image, name }) => {
+const CardContent = ({image , name, }) => {
     return (
         <>
             <div className={classes.main}>
-                <img src={image} alt="logo" />
+                <img src={image} alt="" />
                 <p>{name}</p>
             </div>
         </>
@@ -12,3 +12,7 @@ const CardContent = ({ image, name }) => {
 }
 
 export default CardContent
+
+
+
+

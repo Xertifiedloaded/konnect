@@ -12,10 +12,10 @@ const MainLayout = () => {
         setTimeout(() => {
             setLoading(false)
         }, 3000)
-    },[])
+    }, [])
     return (
         <>
-            <UserContent.Provider value={{ isLoading,setLoading }}>
+            <UserContent.Provider value={{ isLoading, setLoading }}>
                 <div>
                     <Header />
                     <Outlet />
@@ -24,6 +24,6 @@ const MainLayout = () => {
             </UserContent.Provider>
         </>
     )
-}
+};
 
 export default MainLayout;

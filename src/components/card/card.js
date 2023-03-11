@@ -14,9 +14,10 @@ const Card = () => {
             setLoading(true)
             const res = await axios({
                 method: "GET",
-                url: "http://localhost:3000/wallets",
+                url: "data.json",
                 headers: {
-                    "Content-Type": "application.jspn"
+                    "Content-Type": "application.json",
+                    "Accept":"application.json"
                 }
             })
             setUser(res.data)

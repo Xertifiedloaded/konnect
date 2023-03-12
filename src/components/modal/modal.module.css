@@ -1,0 +1,116 @@
+.modal__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 -15px 25px #c5c7c8;
+    display: grid;
+    place-items: center;
+    overflow-y: hidden;
+    transition: all .3s;
+    opacity: 1;
+    /* background: red; */
+}
+
+.modal__close>img {
+    filter: invert(0);
+    cursor: pointer;
+}
+
+.loaderImg {
+    width: 10%;
+
+}
+
+.modal__content {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid white;
+    width: 40%;
+    box-shadow: 0 -15px 25px #c5c7c8;
+    background: white;
+    color: black;
+    transform: translateY(10%);
+}
+
+.modalInputContainer {
+    margin: 20px 0 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalInputContainer span {
+    display: flex;
+    align-items: center;
+}
+
+.modalInputContainer>h5 {
+    color: red;
+}
+
+.walletName {
+    margin: 20px 0 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    height: 50px;
+}
+
+.walletName>h5 {
+    font-weight: 400;
+}
+
+.modalInputContainer>button {
+    padding: 12px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #3a86ff;
+    cursor: pointer;
+}
+
+.modal__close {
+    display: flex;
+    justify-content: end;
+}
+
+.add {
+    overflow-y: hidden;
+}
+
+.remove {
+    overflow-y: scroll;
+}
+
+@media screen and (max-width:600px) {
+    .modal__content {
+        position: fixed;
+        width: 90%;
+        padding: 0;
+    }
+
+    .modal__container {
+        display: block;
+        height: 100vh;
+        margin: 0;
+
+    }
+
+    .modal__content {
+        /* background: red; */
+        height: 80vh;
+    }
+
+    .modal__content {
+        transform: translateY(0);
+    }
+}

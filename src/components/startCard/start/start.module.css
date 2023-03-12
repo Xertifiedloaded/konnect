@@ -1,7 +1,7 @@
 .main {
     width: 90%;
     margin: 0 auto;
-    padding: 40px 40px;
+    padding: 40px 0;
     background: var(--color-white);
 }
 
@@ -20,6 +20,7 @@ section>p {
 section .btn {
     text-align: center;
     margin: 0 0 40px;
+
 }
 
 section .btn>button {
@@ -29,6 +30,7 @@ section .btn>button {
     border: none;
     color: var(--color-white);
     transition: 1s;
+
 }
 
 section .btn>button:hover {
@@ -40,9 +42,16 @@ section .btn>button:hover {
 .card {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 3fr));
     background: var(--color-white);
     place-items: center;
     gap: 20px;
     color: var(--color-black);
+}
+
+@media screen and (max-width:600px) {
+    .main {
+        overflow-x: hidden;
+     width: 100%;
+    }
 }

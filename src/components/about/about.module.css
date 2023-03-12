@@ -28,3 +28,20 @@
     letter-spacing: 1px;
     font-weight: 200;
 }
+
+@media screen and (max-width:600px) {
+    .main>.about {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .main .about .aboutContent>h3,
+    .main .about .aboutValidation>h3 {
+        padding: 0 10px;
+    }
+
+    .main .about .aboutContent>p,
+    .main .about .aboutValidation>p {
+        padding: 0 10px;
+    }
+}

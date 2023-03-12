@@ -24,3 +24,8 @@
 .card:last-child:hover{
     background: transparent;
 }
+@media screen and (max-width:600px) {
+    .card{
+        width: 100%;
+    }
+}

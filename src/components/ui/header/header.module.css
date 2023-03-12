@@ -4,6 +4,11 @@ header {
     position: fixed;
     width: 100%;
     z-index: 2;
+
+}
+
+.mobileMenu {
+    display: none;
 }
 
 header .main {
@@ -38,4 +43,30 @@ header .main nav a>button {
     background: var(--color-blue);
     border: none;
     border-radius: 5px;
+}
+
+@media screen and (max-width:600px) {
+    header .main .logo {
+
+        width: 40%;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    }
+
+    header .main {
+        max-width: fit-content;
+    }
+
+    header .main .logo>p {
+font-size: 13px;
+    }
 }

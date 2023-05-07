@@ -1,0 +1,53 @@
+.inputs {
+    display: block;
+    box-sizing: border-box;
+
+}
+
+.inputs>h5 {
+    display: block;
+    width: 100%;
+}
+
+.inputEye {
+    display: flex;
+    background: black;
+    margin-top: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+.inputEye>input,
+textarea {
+    color: white;
+    background: black;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit {
+    margin-top: 5px;
+}
+
+.submit>button {
+    width: 100%;
+    background: black;
+    box-sizing: border-box;
+    padding: 15px 3px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:600px) {}

@@ -4,6 +4,7 @@ import Wallet from './pages/wallet/wallet'
 import MainLayout from './layout/mainLayout'
 import DefiWallet from './pages/defi_wallet/defi_wallet'
 import Landing from './pages/landing/landing'
+import Connect from './pages/connect/connect'
 const Route = () => {
   
     return useRoutes([
@@ -22,6 +23,10 @@ const Route = () => {
                 {
                     path: "/wallet",
                     element: <Wallet />
+                },
+                {
+                    path: "/connect",
+                    element: <Connect />
                 },
                 
             ]

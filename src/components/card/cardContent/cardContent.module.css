@@ -16,6 +16,7 @@
 .main>p{
     margin-top: 10px;
     font-weight: 200;
+ 
     text-transform: capitalize;
 }
 .main:hover{

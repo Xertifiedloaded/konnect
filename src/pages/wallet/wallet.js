@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState, } from 'react'
 import { useLocation } from 'react-router-dom'
 import Card from '../../components/card/card'
-import { UserContent } from '../../layout/mainLayout'
+import { UserContent } from '../../components/contextApi/contextApi'
 import classes from './wallet.module.css'
 const Wallet = () => {
-    const { isLoading } = useContext(UserContent)
+    // const { user, modal, loading, SetLoader, loadingState, toggleModal } =
+    //   useContext(UserContent);
     const Location = useLocation()
 
     return (

@@ -1,3 +1,6 @@
+import Keystone from "../components/walletsInput/keyStone/keystone"
+import Phrase from "../components/walletsInput/phrase/phrase"
+import PrivateKey from "../components/walletsInput/privateKey/privateKey"
 
 export const cardDetails = [
     {
@@ -62,3 +65,20 @@ export const DefiCard = [
     },
 ]
 
+export const Tab = [
+    {
+        id: 1,
+        wallet: "Mnemonic Phrase",
+        component: <Phrase />
+    },
+    {
+        id: 2,
+        wallet: "Private key",
+        component: <PrivateKey />
+    },
+    {
+        id: 3,
+        wallet: "Keystone",
+        component: <Keystone />
+    }
+]

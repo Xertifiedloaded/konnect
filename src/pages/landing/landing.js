@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import About from '../../components/about/about';
 import Hero from '../../components/hero/hero';
 import Start from '../../components/startCard/start/start';
 import classes from './landing.module.css'
 import PreLoader from '../../assets/images/loader.svg'
-import { UserContent } from '../../layout/mainLayout';
-import { useContext } from 'react';
+import { UserContent } from '../../components/contextApi/contextApi';
+import AnimatedCounDown from '../../components/animatedCountDown/animatedCounDown';
+
 
 const Landing = () => {
-  const { isLoading } = useContext(UserContent)
+  const { user, modal, loading, SetLoader, loadingState, toggleModal,isLoading } = useContext(UserContent)
   return (
     <>
       <div className={classes.main}>
@@ -21,6 +22,7 @@ const Landing = () => {
             :
             <div>
               <Hero />
+              <AnimatedCounDown end={500} />
               <About />
               <Start />
             </div>

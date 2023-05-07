@@ -17,5 +17,14 @@
     grid-template-columns: repeat(auto-fit, minmax(12rem, 5fr));
 }
 .modal{
+
+}
+.divider{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+.name{
+    width: 100%;
     height: 100%;
 }

@@ -1,0 +1,16 @@
+.main {
+    width: 95%;
+    margin: 0 auto;
+}
+.info>p{
+text-align: center;
+font-size: 20px;
+}
+.count {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+}

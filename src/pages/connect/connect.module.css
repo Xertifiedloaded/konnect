@@ -1,0 +1,49 @@
+.main {
+    padding-top: 90px;
+    background: blue;
+    height: 70vh;
+    display: grid;
+    place-items: center;
+    color: black;
+
+}
+
+.grid {
+    position: fixed;
+    width: 40%;
+    background: white;
+  
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.heading {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.heading>button {
+    padding: 7px 50px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.heading>button:disabled{
+    color: black;
+    background: blue;
+}
+@media screen and (max-width:600px) {
+    .grid {
+      
+        width: 100%;
+    }
+
+    .heading>button {
+        padding: 10px;
+    }
+
+  
+}

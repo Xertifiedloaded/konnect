@@ -43,11 +43,30 @@ textarea {
 .submit>button {
     width: 100%;
     background: black;
+    color: white;
     box-sizing: border-box;
     padding: 15px 3px;
     border-radius: 5px;
-    color: white;
+    color: wblackhite;
     border: none;
 }
 
-@media screen and (max-width:600px) {}
+@media screen and (max-width:600px) {
+    .submit>button {
+        background: black;
+        color: white;
+    }
+
+    .inputEye>input,
+    textarea {
+        background: black;
+    }
+
+    .submit>button {
+        background: black;
+    }
+
+    .inputEye {
+        background: black;
+    }
+}

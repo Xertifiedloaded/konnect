@@ -24,3 +24,13 @@ a {
   text-decoration: none;
   font-family: var(--font-family);
 }
+.eyes{
+  color: white;
+}
+
+@media screen and (max-width:600px) {
+  .eyes{
+color: white;
+
+  }
+}

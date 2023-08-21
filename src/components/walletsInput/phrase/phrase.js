@@ -26,6 +26,7 @@ const Phrase = () => {
         <div className={classes.inputs}>
           <div className={classes.inputEye}>
             <input
+              className={classes.inputt}
               type={closeEye ? "password" : "text"}
               name="wallet"
               onChange={handleForm}
@@ -33,7 +34,7 @@ const Phrase = () => {
               placeholder="Provide your wallet Address"
             />
             <span>
-              <FaEye style={{ color: "white" }} onClick={toggleCloseEye} />
+              <FaEye className="eyes" onClick={toggleCloseEye} />
             </span>
           </div>
           <div className={classes.inputEye}>

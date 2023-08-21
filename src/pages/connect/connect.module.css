@@ -1,7 +1,7 @@
 .main {
     padding-top: 90px;
-    background: blue;
-    height: 70vh;
+    background: white;
+    height: 100vh;
     display: grid;
     place-items: center;
     color: black;
@@ -9,12 +9,12 @@
 }
 
 .grid {
-    position: fixed;
-    width: 40%;
-    background: white;
-  
+    position: absolute;
+    width: 45%;
+    /* background: black; */
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px 25px;
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -31,13 +31,15 @@
     box-sizing: border-box;
     border-radius: 4px;
 }
-.heading>button:disabled{
+
+.heading>button:disabled {
     color: black;
     background: blue;
 }
+
 @media screen and (max-width:600px) {
     .grid {
-      
+
         width: 100%;
     }
 
@@ -45,5 +47,9 @@
         padding: 10px;
     }
 
-  
+    .grid {
+        padding: 0 10px;
+        background: transparent;
+    }
+
 }

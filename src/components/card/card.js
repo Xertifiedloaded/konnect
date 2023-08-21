@@ -2,34 +2,36 @@ import { React, useState, useEffect, useContext } from "react";
 import classes from "./card.module.css";
 import CardContent from "./cardContent/cardContent";
 import { UserContent } from "../contextApi/contextApi";
-
+import { Newwallet } from "../../constant/walletLayout/walletLayout";
 import Modal from "../modal/modal";
 const Card = () => {
-  const {
-    user,
-    modal,
-    loadingState,
-    toggleModal,
-    isLoading,
-    setIsLoading,
-  } = useContext(UserContent);
+  const {user,modal,setModal,loadingState,toggleModal,isLoading,setIsLoading} = useContext(UserContent);
   const [spin, setSpin] = useState(false);
   const [asset, setAsset] = useState(false);
-  const loaderState = () => {
-    setSpin(true);
+  const handleClick = () => {
+    setSpin(true)
     setTimeout(() => {
-      setSpin(false);
-    }, 3000);
-  };
+      setSpin(false)
+    }, 2000)
+  }
   const handleName = (items) => {
     setAsset(items.name);
   };
+  // useEffect(() => {
+  //   if (modal) {
+  //     setModal(false)
+  //     document.body.style.overflow = "hidden"
+  //   } else {
+  //     document.body.style.overflow = "visible"
+  //   }
+  // },[])
+ 
 
   return (
     <>
-      <div className={classes.main}>
+      <section className={classes.main}>
         <div className={classes.card}>
-          {user.map((items, idx) => {
+          {Newwallet.map((items, idx) => {
             return (
               <>
                 <div className={classes.Divider}>
@@ -46,27 +48,30 @@ const Card = () => {
                       items={items}
                       {...items}
                       key={idx}
-                      loaderState={loaderState}
+                      handleClick={handleClick}
                     />
                   </div>
-                  <div className={classes.modal}>
-                    {modal && (
-                      <Modal
-                        asset={asset}
-                        isLoading={isLoading}
-                        items={items}
-                        SetLoader={loadingState}
-                        spin={spin}
-                        closeModal={toggleModal}
-                      />
-                    )}
-                  </div>
+                 
                 </div>
               </>
             );
           })}
+    
         </div>
-      </div>
+        {modal && (
+          <div className={classes.mainModal}>
+            <Modal
+              asset={asset}
+              isLoading={isLoading}
+              SetLoader={loadingState}
+              spin={spin}
+              closeModal={toggleModal}
+              handleClick={handleClick}
+            />
+          </div>
+        )}
+       
+      </section>
     </>
   );
 };

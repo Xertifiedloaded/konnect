@@ -34,6 +34,11 @@ textarea {
 textarea {
     height: 100px;
     resize: none;
+
+}
+
+.text {
+    background-color: black;
 }
 
 .submit {
@@ -49,6 +54,20 @@ textarea {
     color: white;
     border: none;
 }
+
 @media screen and (max-width:600px) {
-    
+    .inputEye {
+        background: black;
+                    color: white;
+    }
+
+    .inputEye>input,
+    textarea {
+        background: black;
+                    color: white;
+    }
+        .submit>button{
+            background: black;
+            color: white;
+        }
 }

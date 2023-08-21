@@ -18,7 +18,6 @@ const Defi = () => {
 }
 export default Defi;
 const DefiCards = ({ name }) => {
-  const Location = useLocation()
   return (
     <>
 

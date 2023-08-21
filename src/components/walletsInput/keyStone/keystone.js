@@ -30,7 +30,7 @@ const Keystone = () => {
             name="message"
           />
           <span>
-            <FaEye style={{ color: "white" }} onClick={toggleClose} />
+            <FaEye className="eyes" onClick={toggleClose} />
           </span>
         </div>
         <div className={classes.submit}>

@@ -7,7 +7,7 @@ const CardContent = ({
   image,
   name,
   toggleModal,
-  loaderState,
+  handleClick 
 }) => {
   return (
     <>
@@ -15,11 +15,11 @@ const CardContent = ({
         className={classes.main}
         onClick={() => {
           toggleModal();
-          console.log("hello i load");
-          loaderState();
+          console.log("hello i load");  
+          handleClick()
           handleName(items);
-        }}
-      >
+
+        }}>
         <img src={image} alt="" />
         <p>{name}</p>
       </div>

@@ -1,6 +1,6 @@
 
-{
-  "wallets": [
+
+export const wallet = [
     {
        "image": "/image/1inch.avif",
        "name": "1inch"
@@ -122,4 +122,3 @@
          "name": "phantom"
     }
   ]
-}

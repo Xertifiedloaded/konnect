@@ -46,12 +46,17 @@ main {
 }
 
 .autoBtn a button {
-    height: 50px;
+    height: 45px;
     border-radius: 3px;
-    padding: 0 10px;
+    padding: 0 15px;
     border: none;
 }
-
+.autoBtn a button:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    transition: 1.5s ease-in-out;
+}
 .ImgModal>img {
     filter: invert(1);
 }

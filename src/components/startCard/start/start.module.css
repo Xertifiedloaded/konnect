@@ -23,7 +23,7 @@ section .btn {
 
 }
 
-section .btn>button {
+section .btn a>button {
     padding: 10px 70px;
     text-transform: capitalize;
     background: var(--color-blue);

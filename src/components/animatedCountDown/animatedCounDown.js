@@ -22,7 +22,7 @@ const AnimatedCounDown = ({ end }) => {
   return (
     <>
       <div className={classes.main}>
-        <div>Distribution</div>
+        <h4>Distribution</h4>
         <div className={classes.count}>
           <div className={classes.info}>
             <p>{`${state}k`}</p>

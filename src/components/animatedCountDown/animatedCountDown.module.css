@@ -14,3 +14,7 @@ font-size: 20px;
     align-items: center;
     justify-content: center;
 }
+.main>h4{
+    text-align: center;
+    padding: 20px 0;
+}

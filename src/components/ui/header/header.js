@@ -22,10 +22,10 @@ const Header = () => {
         <>
             <header>
                 <div className={classes.main}>
-                    <div className={classes.logo}>
+                    <Link to={'/'} className={classes.logo}>
                         <img src={Logo} alt="logo" />
                         <p>wallet connect</p>
-                    </div>
+                    </Link>
                     <div onClick={toggleMenu} className={classes.mobileMenu}>
                         {
                             (isMobile || windowWidth > 600) ? <img src={Open} alt="" /> : <img src={Close} alt="" />

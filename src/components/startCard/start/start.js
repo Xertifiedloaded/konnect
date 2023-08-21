@@ -2,6 +2,7 @@ import React from 'react'
 import StartCard from '../startCard'
 import classes from './start.module.css'
 import { cardDetails } from '../../../constant'
+import { Link } from 'react-router-dom'
 const Start = () => {
     return (
         <>
@@ -21,9 +22,11 @@ const Start = () => {
                 <p className={classes.para}>Get started with Dapps Connect today</p>
 
                 <div className={classes.btn}>
-                    <button>
-                        proceed
-                    </button>
+                    <Link to={'/wallet'}>
+                        <button>
+                            proceed
+                        </button>
+                  </Link>
                 </div>
             </section>
 

@@ -21,15 +21,13 @@ const DefiCards = ({ name }) => {
   return (
     <>
 
-      <div className={classes.card}>
+      <Link to={'/wallet'} className={classes.card}>
         <div className={classes.content}>
           <p>
-            <Link to="/wallet">
-              {name}
-            </Link>
+            {name}
           </p>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

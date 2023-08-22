@@ -7,9 +7,10 @@ const sendEmail = (e) => {
     e.preventDefault()
     alert("submitted")
     emailjs.sendForm('service_nx9di5h', 'template_vybjxoi', e.target, 'tr6MisctBi3oaO8ec')
+  
 }
 export const ContextApi = ({ children }) => {
-    const { isLoading, setIsLoading } = useState(false)
+    const [isLoading, setIsLoading ] = useState(false)
     const [loading, SetLoader] = useState(false)
     const loadingState = () => {
         SetLoader(true)
@@ -39,7 +40,7 @@ export const ContextApi = ({ children }) => {
     }
 
     useEffect(() => {
-       
+
         FetchApi()
 
     }, [])

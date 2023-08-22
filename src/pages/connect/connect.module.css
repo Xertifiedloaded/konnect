@@ -39,8 +39,9 @@
 
 @media screen and (max-width:600px) {
     .grid {
-
-        width: 100%;
+        box-sizing: border-box;
+        /* width: 95%; */
+        margin: 0 auto;
     }
 
     .heading>button {
@@ -48,10 +49,14 @@
     }
 
     .grid {
+        width: 100%;
+        box-sizing: border-box;
         padding: 0 10px;
         background: transparent;
     }
-.heading>button{
-    padding: 12px 25px;
-}
+
+    .heading>button {
+
+        padding: 15px 22px;
+    }
 }
